@@ -262,6 +262,7 @@ def destroy
   respond_to do |format|
     # ...html response
     format.json { render json: current_user.slice(:id) }
+    
   end
 end
 ```

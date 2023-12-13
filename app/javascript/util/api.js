@@ -4,6 +4,7 @@ async function customFetch(url, options = {}) {
   options.headers = {
     // Your code here
     'X-CSRF_TOKEN': csrfToken,
+    'Accept': 'application/json', 
     ...options.headers
   };
 
